@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/WritingApp/static/css/main.b950dfb1.css",
+    "main.js": "/WritingApp/static/js/main.2486c850.js",
+    "static/js/787.86b92855.chunk.js": "/WritingApp/static/js/787.86b92855.chunk.js",
+    "static/media/AddButton.svg": "/WritingApp/static/media/AddButton.1aa47eb7dc9af9a6e89b.svg",
+    "static/media/btn.svg": "/WritingApp/static/media/btn.65ef3798d7a2b06195fe.svg",
+    "static/media/secBtn.png": "/WritingApp/static/media/secBtn.b4e1a8b51c921750f176.png",
+    "static/media/Wbtn.svg": "/WritingApp/static/media/Wbtn.ace35705e9ce9e976cc9.svg",
+    "static/media/WEBack.svg": "/WritingApp/static/media/WEBack.389ab8b3ea9d5cc51100.svg",
+    "static/media/picImg.svg": "/WritingApp/static/media/picImg.f8877dce3081842f3204d88a5ba78b7f.svg",
+    "static/media/backBtn.svg": "/WritingApp/static/media/backBtn.0fa7de7385e628953d39.svg",
+    "static/media/paperChar.svg": "/WritingApp/static/media/paperChar.3d94827c75cc2d5c8c89.svg",
+    "static/media/TimelineArrow.svg": "/WritingApp/static/media/TimelineArrow.b146776349d190560ff8.svg",
+    "static/media/WBEBack.svg": "/WritingApp/static/media/WBEBack.63dbf746bcbd2f457f5f.svg",
+    "static/media/XButton.svg": "/WritingApp/static/media/XButton.25ab39074a8223671289.svg",
+    "index.html": "/WritingApp/index.html",
+    "static/media/TypeConBG.svg": "/WritingApp/static/media/TypeConBG.2f82889266908d09e843.svg",
+    "static/media/TypeBack.svg": "/WritingApp/static/media/TypeBack.01fc638d0fa442750d0d.svg",
+    "static/media/BtnBackround.svg": "/WritingApp/static/media/BtnBackround.3a612c76b16681157f28.svg",
+    "static/media/CharArrow.svg": "/WritingApp/static/media/CharArrow.d61ab4f7fd1a844f13c0.svg",
+    "main.b950dfb1.css.map": "/WritingApp/static/css/main.b950dfb1.css.map",
+    "main.2486c850.js.map": "/WritingApp/static/js/main.2486c850.js.map",
+    "787.86b92855.chunk.js.map": "/WritingApp/static/js/787.86b92855.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b950dfb1.css",
+    "static/js/main.2486c850.js"
+  ]
+}
