@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WritingApp/static/css/main.b950dfb1.css",
-    "main.js": "/WritingApp/static/js/main.2486c850.js",
+    "main.js": "/WritingApp/static/js/main.f6d058a2.js",
     "static/js/787.86b92855.chunk.js": "/WritingApp/static/js/787.86b92855.chunk.js",
     "static/media/AddButton.svg": "/WritingApp/static/media/AddButton.1aa47eb7dc9af9a6e89b.svg",
     "static/media/btn.svg": "/WritingApp/static/media/btn.65ef3798d7a2b06195fe.svg",
@@ -20,11 +20,11 @@
     "static/media/BtnBackround.svg": "/WritingApp/static/media/BtnBackround.3a612c76b16681157f28.svg",
     "static/media/CharArrow.svg": "/WritingApp/static/media/CharArrow.d61ab4f7fd1a844f13c0.svg",
     "main.b950dfb1.css.map": "/WritingApp/static/css/main.b950dfb1.css.map",
-    "main.2486c850.js.map": "/WritingApp/static/js/main.2486c850.js.map",
+    "main.f6d058a2.js.map": "/WritingApp/static/js/main.f6d058a2.js.map",
     "787.86b92855.chunk.js.map": "/WritingApp/static/js/787.86b92855.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b950dfb1.css",
-    "static/js/main.2486c850.js"
+    "static/js/main.f6d058a2.js"
   ]
 }
