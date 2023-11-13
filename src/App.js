@@ -55,7 +55,7 @@ export default function App() {
           localStorage.setItem(CHAPTERSTORAGEKEY, JSON.stringify(chapters))
           }, [chapters])
           const location = useLocation();
-          const isMainMenu = location.pathname === '/';
+          const isMainMenu = location.pathname === '/WritingApp';
           const isEditPage = location.pathname.endsWith('Edit');
           const isAddingEvent = location.pathname.endsWith('AddEvent')
           
@@ -64,10 +64,10 @@ export default function App() {
   {!isMainMenu && !isEditPage && !isAddingEvent && <Link to={'..'} relative='path' className='backBtn'> Go Back</Link>}
 
   <Routes>
-    <Route path='' element={<MainMenu/>}/>
+    <Route path='/WritingApp' element={<MainMenu/>}/>
 
     {/* Worldbuilding */}
-    <Route path='/WorldBuilding'>
+    <Route path='/WritingApp/WorldBuilding'>
       <Route index element={<WorldBuildingMain worldElements={worldElements} setWorldElements={setWorldElements}/>} />
       <Route path='Add' element={<AddWorldElement worldElements={worldElements} setWorldElements={setWorldElements}/>}/>
       <Route path=':id'>
@@ -79,7 +79,7 @@ export default function App() {
 
 
     {/* Characters */}
-    <Route path='/characters'>
+    <Route path='/WritingApp/characters'>
       <Route index element ={<CharMenu characters={characters} setCharacters={setCharacters}/>}/>
       <Route path='Add' element ={<AddCharacter characters={characters} setCharacters={setCharacters}/>}/>
 
@@ -89,13 +89,13 @@ export default function App() {
       </Route>
     </Route>
     {/* RelationshipChart */}
-    <Route path='/RelationshipChart' >
+    <Route path='/WritingApp/RelationshipChart' >
       <Route index element={<CharChart characters={characters} setCharacters={setCharacters} />}/>
       <Route path='newRelation' element = {<AddRelationship characters={characters} setCharacters={setCharacters} />}/>
     </Route>
 
     {/* TimeLine */}
-    <Route path='/timeline'>
+    <Route path='/WritingApp/timeline'>
       <Route index element={<Timeline chapters={chapters}/>} />
       <Route path='Add' element={<AddChapter chapters={chapters} setChapters={setChapters}/>} />
       <Route path=':id' >
