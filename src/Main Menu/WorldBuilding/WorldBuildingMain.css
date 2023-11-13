@@ -1,0 +1,64 @@
+.WorldBtn{
+    background-image: url('./Wbtn.svg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-color: transparent; 
+    border: none; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer;
+    outline: none; 
+    text-align: center; 
+    white-space: normal;
+    width: 132px;
+    height: 56px;
+    margin: 8px 8px;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    pointer-events: auto; 
+    
+  }
+  .WorldBtn p {
+
+    margin: 0; 
+
+    display: flex;
+    overflow-wrap: break-word;
+  }
+  #WEContainer{
+    height: 440px;
+    width: 380px;
+    overflow-y: auto;
+    background-image: url('./WEBack.svg');
+    margin:  auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 29px;
+    padding-bottom: 50px;
+    justify-content: center; 
+    align-items: center; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  
+
+  }
+  #WEInnerCon{
+    height: 400px;
+    width: 380px;
+    overflow-y: auto;
+    margin:  auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:0;
+
+  }

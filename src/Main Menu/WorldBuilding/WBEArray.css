@@ -1,0 +1,77 @@
+.addBtn{
+    position: relative;
+    background-image: url('AddButton.svg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-color: transparent; 
+    border: none; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    cursor: pointer;
+    outline: none; 
+    text-align: center; 
+    white-space: normal;
+    width: 218px;
+    height: 56px;
+    margin: 8px;
+    padding: 0;
+    overflow-wrap: break-word;
+    flex-direction: row;
+    object-fit: cover; 
+    pointer-events: auto; 
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.addBtn p{
+    
+    color: white;
+}
+#background {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-image: url('WBEBack.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    outline: none;
+    text-align: center;
+    white-space: normal;
+    width: 343px;
+    height: 651px;
+    margin: 8px;
+    padding: 0;
+    overflow-wrap: break-word;
+  }
+#listCon{
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 0;
+    padding-top: 50px;
+    align-self: flex-start;
+    padding-left: 40px;
+    gap: 24px;
+    width:300px ;
+    height: 800px;
+    overflow-y: auto;
+}
+#listCon a{
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 600;
+line-height: 21px;
+letter-spacing: 0em;
+color: #261304;
+
+
+}

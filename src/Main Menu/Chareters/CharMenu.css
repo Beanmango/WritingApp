@@ -1,0 +1,86 @@
+#addCharBtn{
+    position: absolute;
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+#charContainer{
+    display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-start; 
+  overflow: scroll;
+  max-height: 70vh;
+  overflow-x: hidden;
+  max-width: 95vw;
+    
+    
+}
+.charImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+
+}
+.CharArrowLeft{
+  background-image: url('CharArrow.svg');
+  background-size: contain;
+  width: 12px;
+  height: 21px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.CharArrowRight{
+  background-image: url('CharArrow.svg');
+  background-size: contain;
+  width: 12px;
+  height: 21px;
+  margin-left: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  transform: rotate(180deg);
+}
+.character-link {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    position: static;
+  }
+  .character-link label {
+    color: white; 
+  }
+  .char{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    width: 120px;
+    height: 120px;
+    align-items: center;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #8D4A14;
+    scrollbar-width: thin;
+    
+
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #261304;
+    border: 3px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

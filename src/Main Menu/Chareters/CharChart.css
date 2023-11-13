@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+#addRelation{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+
+}
+
+.graph{
+  margin-left: 50px;
+  display: block;
+  position: absolute;
+  margin-top: 0;
+}
+.node{
+  fill: black;
+}
+.App{
+  width: 100%;
+}
+
+#btnDivChart{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

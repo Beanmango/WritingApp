@@ -1,0 +1,38 @@
+#chapterCon {
+  height: 70vh;
+  width: 100vw;
+  justify-content: flex-start; /* Horizontally center */
+  align-items: center; /* Vertically center */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  #pageDown{
+    background-image: url('./TimelineArrow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17.28px;
+    height: 31.66px;
+    justify-self: flex-start; /* Align to the start (left) */
+    position: absolute;
+    left: 50px;
+  
+  }
+  #pageUp{
+    background-image: url('./TimelineArrow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 17.28px;
+    height: 31.66px;
+    transform: rotate(180deg);
+    position: absolute;
+    right: 50px;
+
+  }
+  #chapterCon p {
+    font-size: 18px;
+
+    }

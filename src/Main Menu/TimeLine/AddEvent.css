@@ -1,0 +1,65 @@
+#TypeCon{
+    background-image: url('./TypeConBG.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    padding: 1.5%;
+    width: 100vw;
+    height: 35vh;
+}
+#addingConEvent {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 12vw;
+    top: 9vh;
+  }
+.event-text {
+    white-space: nowrap; 
+    padding-right: 8px;
+  }
+.event-circle{
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+   }
+   .event-type{
+       display: flex;
+       flex-direction: row;
+       align-items:flex-start;
+       text-align: center;
+      
+      padding: 5px;
+   }
+   #typesInnerCon{
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+    padding-left: 6%;
+    overflow-x: inherit;
+    width: 80vw;
+    height: 35vh;
+    
+   }
+       .deleteButtonEvent{
+      background-image: url('../XButton.svg') ;
+      background-size: contain;
+      align-self: center;
+      background-repeat: no-repeat;
+      width: 12px;
+      height: 12px;
+      margin-bottom: 3px;
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      transform: rotate(180deg);
+      cursor: pointer;
+  }

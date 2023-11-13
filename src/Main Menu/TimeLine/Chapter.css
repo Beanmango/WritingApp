@@ -1,0 +1,25 @@
+.chapters {
+    height: 100px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: width 0.3s ease;
+    margin: 0px;
+    
+  }
+  
+
+
+.chapNotes {
+  width: 25px;
+  transition: width 0.3s ease;
+  
+}
+.chapNotes:hover {
+  width: 100px;
+}
