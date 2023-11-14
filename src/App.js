@@ -55,7 +55,7 @@ export default function App() {
           localStorage.setItem(CHAPTERSTORAGEKEY, JSON.stringify(chapters))
           }, [chapters])
           const location = useLocation();
-          const isMainMenu = location.pathname === '/WritingApp';
+          const isMainMenu = location.pathname === '/';
           const isEditPage = location.pathname.endsWith('Edit');
           const isAddingEvent = location.pathname.endsWith('AddEvent')
           
