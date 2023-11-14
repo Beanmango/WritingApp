@@ -64,10 +64,10 @@ export default function App() {
   {!isMainMenu && !isEditPage && !isAddingEvent && <Link to={'..'} relative='path' className='backBtn'> Go Back</Link>}
 
   <Routes>
-    <Route path='/WritingApp' element={<MainMenu/>}/>
+    <Route path='/' element={<MainMenu/>}/>
 
     {/* Worldbuilding */}
-    <Route path='/WritingApp/WorldBuilding'>
+    <Route path='/WorldBuilding'>
       <Route index element={<WorldBuildingMain worldElements={worldElements} setWorldElements={setWorldElements}/>} />
       <Route path='Add' element={<AddWorldElement worldElements={worldElements} setWorldElements={setWorldElements}/>}/>
       <Route path=':id'>
@@ -79,7 +79,7 @@ export default function App() {
 
 
     {/* Characters */}
-    <Route path='/WritingApp/characters'>
+    <Route path='/characters'>
       <Route index element ={<CharMenu characters={characters} setCharacters={setCharacters}/>}/>
       <Route path='Add' element ={<AddCharacter characters={characters} setCharacters={setCharacters}/>}/>
 
@@ -89,13 +89,13 @@ export default function App() {
       </Route>
     </Route>
     {/* RelationshipChart */}
-    <Route path='/WritingApp/RelationshipChart' >
+    <Route path='/RelationshipChart' >
       <Route index element={<CharChart characters={characters} setCharacters={setCharacters} />}/>
       <Route path='newRelation' element = {<AddRelationship characters={characters} setCharacters={setCharacters} />}/>
     </Route>
 
     {/* TimeLine */}
-    <Route path='/WritingApp/timeline'>
+    <Route path='/timeline'>
       <Route index element={<Timeline chapters={chapters}/>} />
       <Route path='Add' element={<AddChapter chapters={chapters} setChapters={setChapters}/>} />
       <Route path=':id' >
