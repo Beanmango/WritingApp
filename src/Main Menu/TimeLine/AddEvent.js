@@ -167,7 +167,7 @@ export default function AddEvent({ chapters, setChapters }) {
 
       <p>Event Name</p>
       <input ref={eventNameRef} maxLength={50} type="text" />
-      <p>Event Summery</p>
+      <p>Event Summary</p>
       <textarea ref={eventSumRef} type="text" id='discIn'> </textarea>
       <button onClick={handleAdd} className='btn'>Add Event</button>
       </div>
