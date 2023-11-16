@@ -56,3 +56,26 @@ input{
   
   
   }
+
+  #discIn{
+    background: radial-gradient(50% 50% at 50% 50%, #FCF9F4 0%, #F1E6D2 100%);
+    border: none;
+    resize: 'both';
+    top: 412px;
+    left: 30px;
+    border-radius: 8px;
+    min-width: 357px;
+    min-height: 90px;
+    max-height: 30%;
+    resize: none;
+padding: 10px;
+border: 1px solid #ddd;
+display: block;
+margin: 12px 12px 24px 0px;
+;
+}
+@media screen and (max-width: 767px) {
+  #discIn{
+    min-width: 300px;
+    max-width: 400px;
+  }}

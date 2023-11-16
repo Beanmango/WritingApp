@@ -36,3 +36,19 @@
     font-size: 18px;
 
     }
+    @media screen and (max-height: 767px) {
+      #chapterCon {
+        height: 50vh;
+       
+      }
+      #pageUp{
+       
+        right: 10px;
+    
+      }
+      #pageDown{
+        left: 10px;
+      
+      }
+    
+    }

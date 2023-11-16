@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import './TimelineMain.css'
 import ChapterList from './ChapterList';
 import { Link } from 'react-router-dom';
-
-
+import DeviceOrientation, { Orientation } from 'react-screen-orientation'
 
 
 export default function TimelineRender(chapters) {
+  if(Orientation === 'portrait')
+  {console.log( 'phone')}
   chapters = chapters.chapters
      const [page, setPage] = useState(0)
   const chaptersToDisplay= chapters.slice(page, page+10 );
@@ -21,8 +22,12 @@ export default function TimelineRender(chapters) {
       setPage(page-10)
     }
   }
-      return (
+  return (
+    <DeviceOrientation lockOrientation={'landscape'}>
+      <Orientation orientation='landscape' alwaysRender={false}>
+        <div>
         <>
+        
         <div id='chapterCon'>
           {page !== 0 && <div id='pageDown' onClick={handlePageDown}></div>}
           <ChapterList chapters={chaptersToDisplay} />
@@ -30,5 +35,14 @@ export default function TimelineRender(chapters) {
         </div>
         <Link to={'./Add'} className='btn' >New Chapter</Link>
         </>
-      );
-    }
+        </div>
+      </Orientation>
+      
+      <Orientation orientation='portrait' alwaysRender={false}>
+        <div>
+          <p>Please rotate your device</p>
+        </div>
+      </Orientation>
+    </DeviceOrientation>
+  )
+    } 

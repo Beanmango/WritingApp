@@ -60,6 +60,34 @@
       margin-bottom: 3px;
       background-color: rgba(0, 0, 0, 0);
       border: none;
-      transform: rotate(180deg);
+  
       cursor: pointer;
+  }
+  @media screen and (max-width: 767px) {
+    #typesInnerCon{
+      display: grid;
+      overflow-y: auto;
+      padding-left:30px;
+      width: 45vw;
+      height: 35vh;
+      
+     }
+     .event-type {
+      padding-left: 100px;
+      display: flex;
+     
+    }
+    .event-circle{
+      margin: 2px 2px 2px 2px;
+     }
+     .additional-content input{
+      max-width: 150px;
+     }
+     #addingConEvent {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top:5vh;
+      right: 4vw;
+    }
   }

@@ -57,8 +57,44 @@
     margin:  auto;
     display: flex;
     flex-wrap: wrap;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding:0;
 
+  }
+
+  @media screen and (max-width: 767px) {
+    #WEContainer{
+      height: 330px;
+      width: 285px;
+
+    
+  
+    }
+    #WEInnerCon{
+      height: 300px;
+      width: 285px;
+   
+  
+    }
+    .WorldBtn{
+      background-image: url('./Wbtn.svg');
+      background-size: cover; 
+      background-repeat: no-repeat;
+      background-color: transparent; 
+      border: none; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      cursor: pointer;
+      outline: none; 
+      text-align: center; 
+      white-space: normal;
+      width: 90px;
+      height: 35px;
+      margin: 8px 8px;
+      padding: 10px 15px;
+      flex-wrap: wrap;
+      flex-direction: row;
+      pointer-events: auto; 
+      
+    }
   }

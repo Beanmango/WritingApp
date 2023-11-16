@@ -98,12 +98,12 @@ export default function AddCharacter({ characters, setCharacters }) {
     </div>
     <div  style={{marginLeft:'21px'}}>
       <p id='nameTxt'>Name:</p>
-      <input ref={characterNameRef} type="text" maxlength="20" style={{height: '16px', width:'100px'}} />
+      <input ref={characterNameRef} type="text" maxLength="20" style={{height: '16px', width:'100px'}} />
       </div>
       </div>
       <div style={{display:'flex', flexDirection:'column'}}>
       <p style={{marginLeft:'5px'}}>Character Description</p>
-      <textarea ref={characterDiscRef} type="text" id='discIn'> </textarea>
+      <textarea ref={characterDiscRef} type="text" id='discIn'></textarea>
       <button onClick={handleAddCharacter} className='btn' style={{alignSelf:'flex-start'}}>Add Character</button>
  
       </div>

@@ -53,15 +53,17 @@ if (displayName) {
   }
 }
   return (
-    <div style={{width:'80vw', marginLeft:'1'}}>
+    <div style={{width:'80vw', marginLeft:'5vh'}}>
    {!isEditPage ? (
   <div style={{ alignSelf: 'center' }}>
     <div>
       <p>{element.name}</p>
     </div>
+    <div style={{ overflowY:'auto', maxHeight:'80vh'}}>
     <p>{element.desc}</p>
+    </div>
   </div>
-) : (<div style={{}}>
+) : (<div >
     <p>New {displayName}</p>
     <input type='text' ref={nameRef} maxLength={15} defaultValue={element.name}></input>   
     <textarea ref={descRef} type="text" id="discIn">{element.desc}</textarea>

@@ -84,3 +84,20 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+
+  @media screen and (max-width: 767px) {
+    .charImg{
+      width: 70px;
+      height: 70px;
+      border-radius: 70px;
+  
+  }
+  .char{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+  }
+  }

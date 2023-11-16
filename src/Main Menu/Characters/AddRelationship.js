@@ -4,6 +4,7 @@ import './AddRelationship.css'
 import TypeList from './TypesList'
 import { v4 as uuidv4 } from 'uuid';
 import { useNavigate } from 'react-router-dom';
+import DeviceOrientation, { Orientation } from 'react-screen-orientation'
 export default function AddRelationship(characters, setCharacters) {
 
   const LOCATYPERKEY = 'characterRelation.types'
@@ -121,7 +122,10 @@ export default function AddRelationship(characters, setCharacters) {
       }
       }
     return (
-      <>
+  
+        <DeviceOrientation lockOrientation={'landscape'}>
+        <Orientation orientation='landscape' alwaysRender={false}>
+        <>
         <div id='relationAddCon'>
           <div id='mainConRelation'>
             <ChartButtons characters={characters} addToSelected={addToSelected} selected={selected} />
@@ -150,5 +154,13 @@ export default function AddRelationship(characters, setCharacters) {
           </div>
         </div>
       </>
+        </Orientation>
+        
+        <Orientation orientation='portrait' alwaysRender={false}>
+          <div>
+            <p>Please rotate your device</p>
+          </div>
+        </Orientation>
+      </DeviceOrientation>
     );
 }

@@ -1,6 +1,7 @@
 import React, { useRef, useState,useEffect } from 'react';
 import { useLocation, Link, useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
+import DeviceOrientation, { Orientation } from 'react-screen-orientation'
 import './AddEvent.css'
 
 export default function AddEvent({ chapters, setChapters }) {
@@ -161,9 +162,18 @@ export default function AddEvent({ chapters, setChapters }) {
   }
 
   return (
-    <div >
+  
+      <DeviceOrientation lockOrientation={'landscape'}>
+      <Orientation orientation='landscape' alwaysRender={false}>
+      <div>
+          <p>Please rotate your device</p>
+        </div>
+      </Orientation>
+      
+      <Orientation orientation='portrait' alwaysRender={false}>
+      <div >
             <Link to={'../'} state={chapter} className='backBtn'> Go Back</Link>
-      <div style={{paddingLeft:'20px'}}>
+      <div style={{paddingLeft:'20px'}} id='eventInputCon'>
 
       <p>Event Name</p>
       <input ref={eventNameRef} maxLength={50} type="text" />
@@ -222,5 +232,8 @@ export default function AddEvent({ chapters, setChapters }) {
           </div>
           
     </div>
+        
+      </Orientation>
+    </DeviceOrientation>
   );
 };

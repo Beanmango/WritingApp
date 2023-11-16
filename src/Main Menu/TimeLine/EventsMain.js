@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react'
 import EventList from './EventList'
 import './EventMain.css'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+import DeviceOrientation, { Orientation } from 'react-screen-orientation'
 export default function EventsMain({chapters, setChapters}) {
   const location = useLocation();
   let chapter = location.state
@@ -79,10 +80,12 @@ export default function EventsMain({chapters, setChapters}) {
     }
   }
   
-  
-  
-     return (
-      <>
+
+      return (
+        <DeviceOrientation lockOrientation={'landscape'}>
+          <Orientation orientation='landscape' alwaysRender={false}>
+            <div>
+            <>
       <p style={{fontSize:18}}>{chapter.name}</p>
     <div className='container'
     >
@@ -93,5 +96,16 @@ export default function EventsMain({chapters, setChapters}) {
     <div className='btn' onClick={handleDelete}>Delete Chapter</div>
     </div>
     </>
-  )
+            </div>
+          </Orientation>
+          
+          <Orientation orientation='portrait' alwaysRender={false}>
+            <div>
+              <p>Please rotate your device</p>
+            </div>
+          </Orientation>
+        </DeviceOrientation>
+      )
+      
+  
 }
